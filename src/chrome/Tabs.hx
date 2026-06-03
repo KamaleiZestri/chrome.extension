@@ -1,13 +1,13 @@
 package chrome;
 
-import haxe.extern.EitherType;
+import chrome.Events;
+import chrome.ExtensionTypes;
 import chrome.Runtime;
 import chrome.Types;
 import chrome.Windows;
-import chrome.Events;
-import chrome.ExtensionTypes;
+import haxe.extern.EitherType;
 
-@:enum abstract MutedInfoReason(String) from String to String {
+enum abstract MutedInfoReason(String) from String to String {
 	var user = "user";
 	var capture = "capture";
 	var extension = "extension";
@@ -41,13 +41,13 @@ typedef Tab = {
 	@:optional var sessionId : String;
 }
 
-@:enum abstract ZoomSettingsMode(String) from String to String {
+enum abstract ZoomSettingsMode(String) from String to String {
 	var automatic = "automatic";
 	var manual = "manual";
 	var disabled = "disabled";
 }
 
-@:enum abstract ZoomSettingsScope(String) from String to String {
+enum abstract ZoomSettingsScope(String) from String to String {
 	var per_origin = "per-origin";
 	var per_tab = "per-tab";
 }
@@ -58,7 +58,7 @@ typedef ZoomSettings = {
 	@:optional var defaultZoomFactor : Float;
 }
 
-@:enum abstract TabStatus(String) from String to String {
+enum abstract TabStatus(String) from String to String {
 	var loading = "loading";
 	var complete = "complete";
 }

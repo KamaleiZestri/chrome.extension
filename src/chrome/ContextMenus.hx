@@ -1,17 +1,17 @@
 package chrome;
 
-import haxe.extern.EitherType;
 import chrome.Events;
 import chrome.Tabs;
+import haxe.extern.EitherType;
 
-@:enum abstract ItemType(String) from String to String {
+enum abstract ItemType(String) from String to String {
 	var normal = "normal";
 	var checkbox = "checkbox";
 	var radio = "radio";
 	var separator = "separator";
 }
 
-@:enum abstract ContextType(String) from String to String {
+enum abstract ContextType(String) from String to String {
 	var all = "all";
 	var page = "page";
 	var frame = "frame";

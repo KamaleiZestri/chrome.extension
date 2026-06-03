@@ -21,7 +21,7 @@ typedef MessageSender = {
 	@:optional var tlsChannelId : String;
 }
 
-@:enum abstract PlatformOs(String) from String to String {
+enum abstract PlatformOs(String) from String to String {
 	var mac = "mac";
 	var win = "win";
 	var android = "android";
@@ -30,7 +30,7 @@ typedef MessageSender = {
 	var openbsd = "openbsd";
 }
 
-@:enum abstract PlatformArch(String) from String to String {
+enum abstract PlatformArch(String) from String to String {
 	var arm = "arm";
 	var x86_32 = "x86-32";
 	var x86_64 = "x86-64";
@@ -38,7 +38,7 @@ typedef MessageSender = {
 	var mips64 = "mips64";
 }
 
-@:enum abstract PlatformNaclArch(String) from String to String {
+enum abstract PlatformNaclArch(String) from String to String {
 	var arm = "arm";
 	var x86_32 = "x86-32";
 	var x86_64 = "x86-64";
@@ -52,20 +52,20 @@ typedef PlatformInfo = {
 	var nacl_arch : PlatformNaclArch;
 }
 
-@:enum abstract RequestUpdateCheckStatus(String) from String to String {
+enum abstract RequestUpdateCheckStatus(String) from String to String {
 	var throttled = "throttled";
 	var no_update = "no_update";
 	var update_available = "update_available";
 }
 
-@:enum abstract OnInstalledReason(String) from String to String {
+enum abstract OnInstalledReason(String) from String to String {
 	var install = "install";
 	var update = "update";
 	var chrome_update = "chrome_update";
 	var shared_module_update = "shared_module_update";
 }
 
-@:enum abstract OnRestartRequiredReason(String) from String to String {
+enum abstract OnRestartRequiredReason(String) from String to String {
 	var app_update = "app_update";
 	var os_update = "os_update";
 	var periodic = "periodic";

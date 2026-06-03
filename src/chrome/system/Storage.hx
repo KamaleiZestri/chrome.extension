@@ -2,7 +2,7 @@ package chrome.system;
 
 import chrome.Events;
 
-@:enum abstract StorageUnitType(String) from String to String {
+enum abstract StorageUnitType(String) from String to String {
 	var fixed = "fixed";
 	var removable = "removable";
 	var unknown = "unknown";
@@ -15,7 +15,7 @@ typedef StorageUnitInfo = {
 	var capacity : Float;
 }
 
-@:enum abstract StorageEjectResult(String) from String to String {
+enum abstract StorageEjectResult(String) from String to String {
 	var success = "success";
 	var in_use = "in_use";
 	var no_such_device = "no_such_device";

@@ -1,6 +1,6 @@
 package chrome;
 
-@:enum abstract EventType(String) from String to String {
+enum abstract EventType(String) from String to String {
 	var start = "start";
 	var end = "end";
 	var word = "word";
@@ -13,7 +13,7 @@ package chrome;
 	var resume = "resume";
 }
 
-@:enum abstract VoiceGender(String) from String to String {
+enum abstract VoiceGender(String) from String to String {
 	var male = "male";
 	var female = "female";
 }

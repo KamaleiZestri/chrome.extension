@@ -1,6 +1,6 @@
 package chrome;
 
-@:enum abstract Level(String) from String to String {
+enum abstract Level(String) from String to String {
 	var system = "system";
 	var display = "display";
 }

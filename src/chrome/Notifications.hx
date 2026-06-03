@@ -2,14 +2,14 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract TemplateType(String) from String to String {
+enum abstract TemplateType(String) from String to String {
 	var basic = "basic";
 	var image = "image";
 	var list = "list";
 	var progress = "progress";
 }
 
-@:enum abstract PermissionLevel(String) from String to String {
+enum abstract PermissionLevel(String) from String to String {
 	var granted = "granted";
 	var denied = "denied";
 }

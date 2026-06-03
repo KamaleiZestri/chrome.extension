@@ -21,13 +21,13 @@ typedef CookieStore = {
 	var tabIds : Array<Int>;
 }
 
-@:enum abstract SameSiteStatus(String) from String to String {
+enum abstract SameSiteStatus(String) from String to String {
 	var no_restriction = "no_restriction";
 	var lax = "lax";
 	var strict = "strict";
 }
 
-@:enum abstract OnChangedCause(String) from String to String {
+enum abstract OnChangedCause(String) from String to String {
 	var evicted = "evicted";
 	var expired = "expired";
 	var explicit = "explicit";

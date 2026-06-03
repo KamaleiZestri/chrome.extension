@@ -7,7 +7,7 @@ import js.lib.ArrayBuffer;
 #end
 import chrome.Events;
 
-@:enum abstract Hash(String) from String to String{
+enum abstract Hash(String) from String to String{
 	var MD5_SHA1 = "MD5_SHA1";
 	var SHA1 = "SHA1";
 	var SHA256 = "SHA256";
@@ -15,14 +15,14 @@ import chrome.Events;
 	var SHA512 = "SHA512";
 }
 
-@:enum abstract PinRequestErrorType(String) from String to String{
+enum abstract PinRequestErrorType(String) from String to String{
 	var INVALID_PIN = "INVALID_PIN";
 	var INVALID_PUK = "INVALID_PUK";
 	var MAX_ATTEMPTS_EXCEEDED = "MAX_ATTEMPTS_EXCEEDED";
 	var UNKNOWN_ERROR = "UNKNOWN_ERROR";
 }
 
-@:enum abstract RequestType(String) from String to String{
+enum abstract RequestType(String) from String to String{
 	var PIN = "PIN";
 	var PUK = "PUK";
 }

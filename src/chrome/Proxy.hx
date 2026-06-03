@@ -3,7 +3,7 @@ package chrome;
 import chrome.Events;
 import chrome.Types;
 
-@:enum abstract Scheme(String) from String to String {
+enum abstract Scheme(String) from String to String {
 	var http = "http";
 	var https = "https";
 	var quic = "quic";
@@ -11,7 +11,7 @@ import chrome.Types;
 	var socks5 = "socks5";
 }
 
-@:enum abstract Mode(String) from String to String {
+enum abstract Mode(String) from String to String {
 	var direct = "direct";
 	var auto_detect = "auto_detect";
 	var pac_script = "pac_script";

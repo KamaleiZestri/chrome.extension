@@ -2,7 +2,7 @@ package chrome.input;
 
 import chrome.Events;
 
-@:enum abstract KeyboardEventType(String) from String to String {
+enum abstract KeyboardEventType(String) from String to String {
 	var keyup = "keyup";
 	var keydown = "keydown";
 }
@@ -20,7 +20,7 @@ typedef KeyboardEvent = {
 	@:optional var capsLock : Bool;
 }
 
-@:enum abstract InputContextType(String) from String to String {
+enum abstract InputContextType(String) from String to String {
 	var text = "text";
 	var search = "search";
 	var tel = "tel";
@@ -30,7 +30,7 @@ typedef KeyboardEvent = {
 	var password = "password";
 }
 
-@:enum abstract AutoCapitalizeType(String) from String to String {
+enum abstract AutoCapitalizeType(String) from String to String {
 	var characters = "characters";
 	var words = "words";
 	var sentences = "sentences";
@@ -46,7 +46,7 @@ typedef InputContext = {
 	var shouldDoLearning : Bool;
 }
 
-@:enum abstract MenuItemStyle(String) from String to String {
+enum abstract MenuItemStyle(String) from String to String {
 	var check = "check";
 	var radio = "radio";
 	var separator = "separator";
@@ -61,18 +61,18 @@ typedef MenuItem = {
 	@:optional var enabled : Bool;
 }
 
-@:enum abstract UnderlineStyle(String) from String to String {
+enum abstract UnderlineStyle(String) from String to String {
 	var underline = "underline";
 	var doubleUnderline = "doubleUnderline";
 	var noUnderline = "noUnderline";
 }
 
-@:enum abstract WindowPosition(String) from String to String {
+enum abstract WindowPosition(String) from String to String {
 	var cursor = "cursor";
 	var composition = "composition";
 }
 
-@:enum abstract ScreenType(String) from String to String {
+enum abstract ScreenType(String) from String to String {
 	var normal = "normal";
 	var login = "login";
 	var lock = "lock";
@@ -80,19 +80,19 @@ typedef MenuItem = {
 }
 
 /*
-@:enum abstract CallbackStyle(String) from String to String {
+enum abstract CallbackStyle(String) from String to String {
 	//TODO is missing in documentation
 	var async = "async";
 }
 */
 
-@:enum abstract MouseButton(String) from String to String {
+enum abstract MouseButton(String) from String to String {
 	var left = "left";
 	var middle = "middle";
 	var right = "right";
 }
 
-@:enum abstract WindowType(String) from String to String {
+enum abstract WindowType(String) from String to String {
 	var normal = "normal";
 	var followCursor = "followCursor";
 }

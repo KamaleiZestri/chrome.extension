@@ -9,7 +9,7 @@ typedef Processor = {
 	};
 }
 
-@:enum abstract ProcessorFeature(String) from String to String {
+enum abstract ProcessorFeature(String) from String to String {
 	var mmx = "mmx";
 	var sse = "sse";
 	var sse2 = "sse2";

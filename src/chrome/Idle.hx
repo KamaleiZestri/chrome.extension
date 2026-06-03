@@ -2,7 +2,7 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract IdleState(String) from String to String {
+enum abstract IdleState(String) from String to String {
 	var active = "active";
 	var idle = "idle";
 	var locked = "locked";

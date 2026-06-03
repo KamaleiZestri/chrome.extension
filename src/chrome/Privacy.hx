@@ -2,7 +2,7 @@ package chrome;
 
 import chrome.Types;
 
-@:enum abstract IPHandlingPolicy(String) from String to String {
+enum abstract IPHandlingPolicy(String) from String to String {
 	var default_ = "default";
 	var default_public_and_private_interfaces = "default_public_and_private_interfaces";
 	var default_public_interface_only = "default_public_interface_only";

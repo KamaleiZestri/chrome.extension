@@ -2,14 +2,14 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract ChromeSettingScope(String) from String to String {
+enum abstract ChromeSettingScope(String) from String to String {
 	var regular = "regular";
 	var regular_only = "regular_only";
 	var incognito_persistent = "incognito_persistent";
 	var incognito_session_only = "incognito_session_only";
 }
 
-@:enum abstract LevelOfControl(String) from String to String {
+enum abstract LevelOfControl(String) from String to String {
 	var not_controllable = "not_controllable";
 	var controlled_by_other_extensions = "controlled_by_other_extensions";
 	var controllable_by_this_extension = "controllable_by_this_extension";

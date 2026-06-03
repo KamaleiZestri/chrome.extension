@@ -3,7 +3,7 @@ package chrome;
 import chrome.Events;
 import chrome.Tabs;
 
-@:enum abstract WindowType(String) from String to String {
+enum abstract WindowType(String) from String to String {
 	var normal = "normal";
 	var popup = "popup";
 	var panel = "panel";
@@ -11,7 +11,7 @@ import chrome.Tabs;
 	var devtools = "devtools";
 }
 
-@:enum abstract WindowState(String) from String to String {
+enum abstract WindowState(String) from String to String {
 	var normal = "normal";
 	var minimized = "minimized";
 	var maximized = "maximized";
@@ -34,7 +34,7 @@ typedef Window = {
 	@:optional var sessionId : String;
 }
 
-@:enum abstract CreateType(String) from String to String {
+enum abstract CreateType(String) from String to String {
 	var normal = "normal";
 	var popup = "popup";
 	var panel = "panel";

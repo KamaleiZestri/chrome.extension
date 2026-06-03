@@ -11,7 +11,7 @@ typedef NetworkInfo = {
     @:optional var Security : String;
 }
 
-@:enum abstract Result(String) from String to String {
+enum abstract Result(String) from String to String {
 	var unhandled = "unhandled";
 	var succeeded = "succeeded";
 	var rejected = "rejected";

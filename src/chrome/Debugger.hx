@@ -8,14 +8,14 @@ typedef Debuggee = {
 	@:optional var targetId : String;
 }
 
-@:enum abstract TargetInfoType(String) from String to String {
+enum abstract TargetInfoType(String) from String to String {
 	var page = "page";
 	var background_page = "background_page";
 	var worker = "worker";
 	var other = "other";
 }
 
-@:enum abstract DetachReason(String) from String to String {
+enum abstract DetachReason(String) from String to String {
 	var target_closed = "target_closed";
 	var canceled_by_user = "canceled_by_user";
 }

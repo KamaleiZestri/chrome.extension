@@ -7,19 +7,19 @@ typedef IconInfo = {
 	var url : String;
 }
 
-@:enum abstract LaunchType(String) from String to String {
+enum abstract LaunchType(String) from String to String {
 	var OPEN_AS_REGULAR_TAB = "OPEN_AS_REGULAR_TAB";
 	var OPEN_AS_PINNED_TAB = "OPEN_AS_PINNED_TAB";
 	var OPEN_AS_WINDOW = "OPEN_AS_WINDOW";
 	var OPEN_FULL_SCREEN = "OPEN_FULL_SCREEN";
 }
 
-@:enum abstract ExtensionDisabledReason(String) from String to String {
+enum abstract ExtensionDisabledReason(String) from String to String {
 	var unknown = "unknown";
 	var permissions_increase = "permissions_increase";
 }
 
-@:enum abstract ExtensionType(String) from String to String {
+enum abstract ExtensionType(String) from String to String {
 	var extension = "extension";
 	var hosted_app = "hosted_app";
 	var packaged_app = "packaged_app";
@@ -27,7 +27,7 @@ typedef IconInfo = {
 	var theme = "theme";
 }
 
-@:enum abstract ExtensionInstallType(String) from String to String {
+enum abstract ExtensionInstallType(String) from String to String {
 	var admin = "admin";
 	var development = "development";
 	var normal = "normal";

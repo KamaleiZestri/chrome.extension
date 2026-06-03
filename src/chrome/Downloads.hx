@@ -2,13 +2,13 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract FilenameConflictAction(String) from String to String {
+enum abstract FilenameConflictAction(String) from String to String {
 	var uniquify = "uniquify";
 	var overwrite = "overwrite";
 	var prompt = "prompt";
 }
 
-@:enum abstract InterruptReason(String) from String to String {
+enum abstract InterruptReason(String) from String to String {
 	var FILE_FAILED = "FILE_FAILED";
 	var FILE_ACCESS_DENIED = "FILE_ACCESS_DENIED";
 	var FILE_NO_SPACE = "FILE_NO_SPACE";
@@ -40,12 +40,12 @@ import chrome.Events;
 	var CRASH = "CRASH";
 }
 
-@:enum abstract Method(String) from String to String {
+enum abstract Method(String) from String to String {
 	var GET = "GET";
 	var POST = "POST";
 }
 
-@:enum abstract DangerType(String) from String to String {
+enum abstract DangerType(String) from String to String {
 	var file = "file";
 	var url = "url";
 	var content = "content";
@@ -56,7 +56,7 @@ import chrome.Events;
 	var accepted = "accepted";
 }
 
-@:enum abstract State(String) from String to String {
+enum abstract State(String) from String to String {
 	var in_progress = "in_progress";
 	var interrupted = "interrupted";
 	var complete = "complete";

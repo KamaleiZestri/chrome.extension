@@ -24,7 +24,7 @@ typedef StorageArea = {
 	function clear( ?callback : Void->Void ) : Void;
 }
 
-@:enum abstract StorageAreaName(String) from String to String {
+enum abstract StorageAreaName(String) from String to String {
 	var sync = "sync";
 	var local = "local";
 	var managed = "managed";

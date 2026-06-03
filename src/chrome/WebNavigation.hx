@@ -1,8 +1,8 @@
 package chrome;
 
-import haxe.extern.EitherType;
 import chrome.Events;
 import chrome.History;
+import haxe.extern.EitherType;
 
 @:enum private abstract TransitionType(String) from String to String {
 	var link = "link";
@@ -18,7 +18,7 @@ import chrome.History;
 	var keyword_generated = "keyword_generated";
 }
 
-@:enum abstract TransitionQualifier(String) from String to String {
+enum abstract TransitionQualifier(String) from String to String {
 	var client_redirect = "client_redirect";
 	var server_redirect = "server_redirect";
 	var forward_back = "forward_back";

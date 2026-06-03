@@ -2,13 +2,13 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract DescriptionStyleType(String) from String to String {
+enum abstract DescriptionStyleType(String) from String to String {
 	var url = "url";
 	var match = "match";
 	var dim = "dim";
 }
 
-@:enum abstract OnInputEnteredDisposition(String) to String {
+enum abstract OnInputEnteredDisposition(String) to String {
 	var currentTab = "currentTab";
 	var newForegroundTab = "newForegroundTab";
 	var newBackgroundTab = "newBackgroundTab";

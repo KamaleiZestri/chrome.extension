@@ -1,9 +1,9 @@
 package chrome;
 
-import js.lib.ArrayBuffer;
 import chrome.Events;
+import js.lib.ArrayBuffer;
 
-@:enum abstract ProviderError(String) from String to String {
+enum abstract ProviderError(String) from String to String {
     var OK = "OK";
     var FAILED = "FAILED";
     var IN_USE = "IN_USE";
@@ -23,17 +23,17 @@ import chrome.Events;
     var IO = "IO";
 }
 
-@:enum abstract OpenFileMode(String) from String to String {
+enum abstract OpenFileMode(String) from String to String {
     var READ = "READ";
     var WRITE = "WRITE";
 }
 
-@:enum abstract ChangeType(String) from String to String {
+enum abstract ChangeType(String) from String to String {
     var CHANGED = "CHANGED";
     var DELETED = "DELETED";
 }
 
-@:enum abstract CommonActionId(String) from String to String {
+enum abstract CommonActionId(String) from String to String {
     var SAVE_FOR_OFFLINE = "SAVE_FOR_OFFLINE";
     var OFFLINE_NOT_NECESSARY = "OFFLINE_NOT_NECESSARY";
     var SHARE = "SHARE";

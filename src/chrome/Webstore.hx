@@ -2,12 +2,12 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract InstallStage(String) from String to String {
+enum abstract InstallStage(String) from String to String {
 	var installing = "installing";
 	var downloading = "downloading";
 }
 
-@:enum abstract ErrorCode(String) from String to String {
+enum abstract ErrorCode(String) from String to String {
 	var otherError = "otherError";
 	var aborted = "aborted";
 	var installInProgress = "installInProgress";

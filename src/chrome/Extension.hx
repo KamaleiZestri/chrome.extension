@@ -1,6 +1,6 @@
 package chrome;
 
-@:enum abstract ViewType(String) from String to String {
+enum abstract ViewType(String) from String to String {
 	var tab = "tab";
 	var popup = "popup";
 }

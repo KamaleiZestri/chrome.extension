@@ -1,6 +1,6 @@
 package chrome;
 
-@:enum abstract WallpaperLayout(String) from String to String {
+enum abstract WallpaperLayout(String) from String to String {
     var STRETCH = "STRETCH";
     var CENTER = "CENTER";
     var CENTER_CROPPED = "CENTER_CROPPED";

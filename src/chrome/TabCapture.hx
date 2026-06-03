@@ -1,9 +1,9 @@
 package chrome;
 
-import js.html.LocalMediaStream;
 import chrome.Events;
+import js.html.LocalMediaStream;
 
-@:enum abstract CaptureInfoStatus(String) from String to String {
+enum abstract CaptureInfoStatus(String) from String to String {
 	var pending = "pending";
 	var active = "active";
 	var stopped = "stopped";

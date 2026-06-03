@@ -2,7 +2,7 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract ProcessType(String) from String to String {
+enum abstract ProcessType(String) from String to String {
 	var browser = "browser";
     var renderer = "renderer";
     var extension = "extension";

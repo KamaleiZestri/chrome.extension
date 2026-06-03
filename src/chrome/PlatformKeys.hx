@@ -11,7 +11,7 @@ typedef Match = {
 	var keyAlgorithm : Dynamic;
 }
 
-@:enum abstract CertificateTypes(String) from String to String {
+enum abstract CertificateTypes(String) from String to String {
 	var rsaSign = "rsaSign";
 	var ecdsaSign = "ecdsaSign";
 }

@@ -3,12 +3,12 @@ package chrome;
 import chrome.Events;
 import js.lib.ArrayBuffer;
 
-@:enum abstract ConnectionState(String) from String to String {
+enum abstract ConnectionState(String) from String to String {
     var connected = "connected";
     var failure = "failure";
 }
 
-@:enum abstract MessageState(String) from String to String {
+enum abstract MessageState(String) from String to String {
     var connected = "connected";
     var disconnected = "disconnected";
     var error = "error";
@@ -19,7 +19,7 @@ import js.lib.ArrayBuffer;
     var resume = "resume";
 }
 
-@:enum abstract UIEventState(String) from String to String {
+enum abstract UIEventState(String) from String to String {
     var showAddDialog = "showAddDialog";
     var showConfigureDialog = "showConfigureDialog";
 }

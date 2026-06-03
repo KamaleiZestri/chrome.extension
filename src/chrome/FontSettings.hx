@@ -8,7 +8,7 @@ typedef FontName = {
 	var displayName : String;
 }
 
-@:enum abstract ScriptCode(String) from String to String {
+enum abstract ScriptCode(String) from String to String {
 	var Afak = "Afak";
 	var Arab = "Arab";
 	var Armi = "Armi";
@@ -163,7 +163,7 @@ typedef FontName = {
 	var Zyyy = "Zyyy";
 }
 
-@:enum abstract GenericFamily(String) from String to String {
+enum abstract GenericFamily(String) from String to String {
 	var standard = "standard";
 	var sansserif = "sansserif";
 	var serif = "serif";
@@ -173,7 +173,7 @@ typedef FontName = {
 }
 
 /*
-@:enum abstract LevelOfControl(String) from String to String {
+enum abstract LevelOfControl(String) from String to String {
 	var not_controllable = "not_controllable";
 	var controlled_by_other_extensions = "controlled_by_other_extensions";
 	var controllable_by_this_extension = "controllable_by_this_extension";

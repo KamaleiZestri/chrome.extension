@@ -5,69 +5,69 @@ typedef ResourceIdentifier = {
 	@:optional var description : String;
 }
 
-@:enum abstract Scope(String) from String to String{
+enum abstract Scope(String) from String to String{
 	var regular = "regular";
 	var incognito_session_only = "incognito_session_only";
 }
 
-@:enum abstract CookiesContentSetting(String) from String to String{
+enum abstract CookiesContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var session_only = "session_only";
 }
 
-@:enum abstract ImagesContentSetting(String) from String to String{
+enum abstract ImagesContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 }
 
-@:enum abstract JavascriptContentSetting(String) from String to String{
+enum abstract JavascriptContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 }
 
-@:enum abstract LocationContentSetting(String) from String to String{
+enum abstract LocationContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var ask = "ask";
 }
 
-@:enum abstract PluginsContentSetting(String) from String to String{
+enum abstract PluginsContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var detect_important_content = "detect_important_content";
 }
 
-@:enum abstract PopupsContentSetting(String) from String to String{
+enum abstract PopupsContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 }
 
-@:enum abstract NotificationsContentSetting(String) from String to String{
-	var allow = "allow";
-	var block = "block";
-	var ask = "ask";
-}
-
-@:enum abstract MicrophoneContentSetting(String) from String to String{
+enum abstract NotificationsContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var ask = "ask";
 }
 
-@:enum abstract CameraContentSetting(String) from String to String{
+enum abstract MicrophoneContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var ask = "ask";
 }
 
-@:enum abstract PpapiBrokerContentSetting(String) from String to String{
+enum abstract CameraContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var ask = "ask";
 }
 
-@:enum abstract MultipleAutomaticDownloadsContentSetting(String) from String to String{
+enum abstract PpapiBrokerContentSetting(String) from String to String{
+	var allow = "allow";
+	var block = "block";
+	var ask = "ask";
+}
+
+enum abstract MultipleAutomaticDownloadsContentSetting(String) from String to String{
 	var allow = "allow";
 	var block = "block";
 	var ask = "ask";

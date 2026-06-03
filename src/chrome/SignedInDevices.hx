@@ -2,7 +2,7 @@ package chrome;
 
 import chrome.Events;
 
-@:enum abstract OS(String) from String to String {
+enum abstract OS(String) from String to String {
 	var win = "win";
 	var mac = "mac";
 	var linux = "linux";
@@ -12,7 +12,7 @@ import chrome.Events;
 	var unknown = "unknown";
 }
 
-@:enum abstract SignedInDeviceType(String) from String to String {
+enum abstract SignedInDeviceType(String) from String to String {
 	var desktop_or_laptop = "desktop_or_laptop";
 	var phone = "phone";
 	var tablet = "tablet";

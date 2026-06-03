@@ -1,9 +1,9 @@
 package chrome;
 
-import haxe.extern.EitherType;
 import chrome.Events;
+import haxe.extern.EitherType;
 
-@:enum abstract ResourceType(String) from String to String {
+enum abstract ResourceType(String) from String to String {
 	var main_frame = "main_frame";
 	var sub_frame = "sub_frame";
 	var stylesheet = "stylesheet";
@@ -19,49 +19,49 @@ import chrome.Events;
 	var other = "other";
 }
 
-@:enum abstract OnBeforeRequestOptions(String) from String to String {
+enum abstract OnBeforeRequestOptions(String) from String to String {
 	var blocking = "blocking";
 	var requestBody = "requestBody";
 }
 
-@:enum abstract OnBeforeSendHeadersOptions(String) from String to String {
+enum abstract OnBeforeSendHeadersOptions(String) from String to String {
 	var requestHeaders = "requestHeaders";
 	var blocking = "blocking";
 	var extraHeaders = "extraHeaders";
 }
 
-@:enum abstract OnSendHeadersOptions(String) from String to String {
+enum abstract OnSendHeadersOptions(String) from String to String {
 	//TODO missing in documentation
 	var requestHeaders = "requestHeaders";
 	var extraHeaders = "extraHeaders";
 }
 
-@:enum abstract OnHeadersReceivedOptions(String) from String to String {
+enum abstract OnHeadersReceivedOptions(String) from String to String {
 	var blocking = "blocking";
 	var responseHeaders = "responseHeaders";
 	var extraHeaders = "extraHeaders";
 }
 
-@:enum abstract OnAuthRequiredOptions(String) from String to String {
+enum abstract OnAuthRequiredOptions(String) from String to String {
 	var responseHeaders = "responseHeaders";
 	var blocking = "blocking";
 	var asyncBlocking = "asyncBlocking";
 	var extraHeaders = "extraHeaders";
 }
 
-@:enum abstract OnResponseStartedOptions(String) from String to String {
+enum abstract OnResponseStartedOptions(String) from String to String {
 	//TODO missing in documentation
 	var responseHeaders = "responseHeaders";
 	var extraHeaders = "extraHeaders";
 }
 
-@:enum abstract OnBeforeRedirectOptions(String) from String to String {
+enum abstract OnBeforeRedirectOptions(String) from String to String {
 	//TODO missing in documentation
 	var responseHeaders = "responseHeaders";
 	var extraHeaders = "extraHeaders";
 }
 
-@:enum abstract OnCompletedOptions(String) from String to String {
+enum abstract OnCompletedOptions(String) from String to String {
 	//TODO missing in documentation
 	var responseHeaders = "responseHeaders";
 	var extraHeaders = "extraHeaders";
@@ -89,7 +89,7 @@ typedef UploadData = {
 
 typedef HttpHeaders = EitherType<Dynamic,String>;
 
-@:enum abstract IgnoredActionType(String) from String to String {
+enum abstract IgnoredActionType(String) from String to String {
 	var redirect = "redirect";
 	var request_headers = "request_headers";
 	var response_headers = "response_headers";

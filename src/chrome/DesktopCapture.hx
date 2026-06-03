@@ -2,7 +2,7 @@ package chrome;
 
 import chrome.Tabs;
 
-@:enum abstract DesktopCaptureSourceType(String) from String to String {
+enum abstract DesktopCaptureSourceType(String) from String to String {
 	var screen = "screen";
 	var window = "window";
 	var tab = "tab";
