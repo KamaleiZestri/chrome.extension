@@ -6,6 +6,7 @@ import chrome.Runtime;
 import chrome.Types;
 import chrome.Windows;
 import haxe.extern.EitherType;
+import js.lib.Promise;
 
 enum abstract MutedInfoReason(String) from String to String {
 	var user = "user";
@@ -100,7 +101,7 @@ extern class Tabs {
 			?windowType:WindowType,
 			?index:Int
 		},
-		callback : Array<Tab>->Void ) : Void;
+		callback : Array<Tab>->Void ) : Promise<Array<Tab>>;
 	static function highlight( highlightInfo : {?windowId:Int,tabs:EitherType<Array<Int>,Int>}, ?callback : Window->Void ) : Void;
 	static function update(
 		?tabId : Int,
